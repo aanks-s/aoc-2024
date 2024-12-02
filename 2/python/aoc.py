@@ -19,12 +19,10 @@ for sublist in data:
         final_safe += 1
     # Add part_2 rule
     else:
-        is_safe = False
         for i in range(len(sublist)):
             new_sublist = sublist[:i] + sublist[i + 1:]
             if safe_part_1(new_sublist):
                 final_safe += 1
-                is_safe = True
                 break
 
 print(part_1)
